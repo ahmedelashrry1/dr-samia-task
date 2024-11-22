@@ -89,7 +89,7 @@ img {
 
 .header {
   padding: 1rem 20px;
-  background-color: green;
+  background-color: pink;
 }
 .header__wrapper {
   display: flex;
@@ -191,11 +191,11 @@ section {
   padding: 5px 20px;
   border-radius: 10px;
   border: none;
-  background-color: green;
+  background-color: pink;
   font-weight: 500;
 }
 #form button:hover {
-  background-color: rgb(186, 240, 186);
+  background-color: rgb(244, 129, 194);
 }
 
 @media screen and (max-width: 450px) {

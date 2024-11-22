@@ -2,11 +2,11 @@ const car = document.getElementById("car");
 let text = document.getElementById("text");
 
 function moveMouse() {
-  text.innerHTML = "book is here 😎";
+  text.innerHTML = "skincear is here 😎";
 }
 
 function mouseLeave() {
-  text.innerHTML = "book left 😪";
+  text.innerHTML = "skincear left 😪";
 }
 
 // form
