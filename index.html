@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="logo">
+            <img src="/adidas logo.png" />
+            <span> Adidas</span>
+          </div>
+
+          <nav class="navbar">
+            <ul class="list">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/">About</a>
+              </li>
+              <li>
+                <a href="/">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- task 1 -->
+      <section>
+        <div class="container">
+          <h1 class="title">Task 1 - User click link</h1>
+          <div class="task-one">
+            <img src="/github.png" />
+            <a href="https://www.github.com/" target="_blank">Github</a>
+          </div>
+        </div>
+      </section>
+      <!-- task 2 -->
+      <section>
+        <div class="container">
+          <h1 class="title">Task 2 - Say Bye</h1>
+          <div class="task-two">
+            <a target="_blank" onclick='alert("Bye")'>sayBye 👋</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- task 3 -->
+      <section>
+        <div class="container">
+          <h1 class="title">Task 3 - OnMouseOver & onMouseOut</h1>
+          <div class="task-three">
+            <div
+              class="task-three__img"
+              id="car"
+              onmousemove="moveMouse()"
+              onmouseleave="mouseLeave()"
+            >
+              <img src="/book.jpg" />
+              <p id="text">Hover on the picture 👆</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- task 4 -->
+      <section>
+        <div class="container">
+          <h1 class="title">Task 4 - Form & onSubmit & errorhandle</h1>
+          <div class="task-four">
+            <form id="form" action="/" method="GET">
+              <div class="group">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" />
+              </div>
+              <div class="group">
+                <label for="email">Email</label>
+                <input id="email" name="email" />
+              </div>
+              <div class="group">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" />
+              </div>
+              <div id="error"></div>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
